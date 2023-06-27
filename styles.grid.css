@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 13px;
+    font-family: Barlow Semi Condensed;
+}
+
+body {
+    background-color: antiquewhite;
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.superMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    align-items: start;
+    justify-content: center;
+}
+
+.main {
+    height: 80%;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMain {
+    /* height: 20%; */
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.card-1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: white;
+    padding: 6%;
+    /* height: 400px; */
+    width: 70%;
+    border-radius: 5.5px;
+    margin: 10px auto;
+}
+
+h4 {
+    font-size: 1.42rem;
+}
+
+p {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.innerDetails {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.card-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 6%;
+    width: 70%;
+    border-radius: 5.5px;
+    margin: 10px auto;
+}
+
+.card-3 {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 6%;
+    width: 70%;
+    border-radius: 5.5px;
+    margin: 10px auto;
+}
+
+.card-4 {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    padding: 6%;
+    width: 70%;
+    border-radius: 5.5px;
+    margin: 10px auto;
+}
+
+.card-5 {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 6%;
+    width: 70%;
+    border-radius: 5.5px;
+    margin: 10px auto;
+}
+
+@media (min-width:830px) {
+    /* body {
+        flex-direction: row;
+    } */
+
+    .superMain {
+        display: grid;
+        height: 510px;
+        width: 900px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin: 150px 150px;
+        padding: 0%;
+    }
+    .main{
+        
+        display: grid;
+        height: 510px;
+        width: 700px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;    
+        margin: 0px;    
+        row-gap: 20px;
+        column-gap: 20px;
+        padding: 0%;
+        /* align-items: center; */
+        /* justify-content: center; */
+        
+    }
+    .subMain{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;    
+        /* margin: auto;     */
+        
+    }
+    .card-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0%;
+        /* height: 99%; */
+        /* width: 60%; */
+        width: auto;
+        height: 240px;
+        padding: 4%;
+        
+    }
+    .card-2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0%;
+        padding: 4%;
+        width: auto;
+        height: 240px;
+        
+    }
+    .card-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0%;
+        padding: 4%;
+        height: 240px;
+        width: auto;
+        
+    }
+    .card-4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0%;
+        padding: 4%;
+        height: 240px;
+        width: auto;
+    }
+
+    .card-5{
+        height: 510px;
+        width: auto;
+        margin: 0%;
+        padding: 7%;
+    }
+    
+    
+}
